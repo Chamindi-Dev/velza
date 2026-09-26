@@ -23,7 +23,7 @@ function Home() {
 
                 <div className="hero-content">
 
-                    <p>NEW COLLECTION</p>
+                    <p>NEW </p>
 
                     <h1>Discover Your Style</h1>
 
