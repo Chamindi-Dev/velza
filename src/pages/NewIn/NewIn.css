@@ -1,0 +1,30 @@
+.new-in-header {
+    text-align: center;
+    padding: 80px 20px 50px;
+}
+
+.new-in-header p:first-child {
+    font-size: 13px;
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+
+.new-in-header h1 {
+    font-size: 48px;
+    margin: 15px 0;
+}
+
+.new-in-header p:last-child {
+    font-size: 16px;
+    color: #777;
+}
+
+.new-in-products {
+    padding: 30px 40px 80px;
+}
+
+.new-in-product-list {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}

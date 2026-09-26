@@ -1,0 +1,84 @@
+.search-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 40px 100px;
+}
+
+.search-container > h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+
+/* Search Box */
+
+.search-box {
+    max-width: 600px;
+    margin: 0 auto 50px;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 15px 18px;
+    border: 1px solid #ccc;
+    outline: none;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-family: inherit;
+}
+
+.search-box input:focus {
+    border-color: #222;
+}
+
+
+/* Search Results */
+
+.search-product-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px 25px;
+}
+
+.no-search-results {
+    text-align: center;
+    color: #777;
+    padding: 60px 0;
+}
+
+
+/* Tablet */
+
+@media (max-width: 1000px) {
+
+    .search-product-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    .search-container {
+        padding: 40px 20px 70px;
+    }
+
+    .search-container > h1 {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+
+    .search-box {
+        margin-bottom: 40px;
+    }
+
+    .search-product-list {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+}

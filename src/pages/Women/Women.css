@@ -1,0 +1,168 @@
+.women-header {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.women-header p:first-child {
+    font-size: 13px;
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+
+.women-header h1 {
+    font-size: 48px;
+    margin: 15px 0;
+}
+
+.women-header p:last-child {
+    font-size: 16px;
+    color: #777;
+}
+
+
+/* Products Section */
+
+.women-products {
+    padding: 50px 40px 80px;
+}
+
+
+/* Category Filter */
+
+.category-filter {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.category-filter button {
+    padding: 10px 22px;
+    border: 1px solid #222;
+    background-color: white;
+    color: #222;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.category-filter button:hover {
+    background-color: #222;
+    color: white;
+}
+
+.category-filter button.active-category {
+    background-color: #222;
+    color: white;
+}
+
+
+/* Product Grid */
+
+.women-product-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px 25px;
+}
+
+
+/* Tablet */
+
+@media (max-width: 1000px) {
+
+    .women-product-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    .women-header {
+        padding: 60px 20px;
+    }
+
+    .women-header h1 {
+        font-size: 40px;
+    }
+
+    .women-header p:last-child {
+        font-size: 14px;
+    }
+
+    .women-products {
+        padding: 40px 20px 60px;
+    }
+
+    .women-product-list {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .category-filter {
+        gap: 10px;
+        margin-bottom: 30px;
+    }
+
+    .category-filter button {
+        padding: 9px 18px;
+    }
+
+}
+.shop-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.sort-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sort-box label {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.sort-box select {
+    padding: 10px 35px 10px 12px;
+    border: 1px solid #222;
+    background-color: white;
+    color: #222;
+    font-size: 13px;
+    font-family: inherit;
+    cursor: pointer;
+    outline: none;
+}
+
+.sort-box select:focus {
+    border-color: #222;
+}
+
+@media (max-width: 768px) {
+
+    .shop-controls {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 20px;
+    }
+
+    .category-filter {
+        justify-content: center;
+    }
+
+    .sort-box {
+        justify-content: flex-end;
+    }
+
+}

@@ -1,0 +1,309 @@
+.admin-products-page {
+    min-height: 100vh;
+    background-color: #fff;
+}
+
+.admin-products-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 60px 30px 100px;
+}
+
+
+/* Page Heading */
+
+.admin-products-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.admin-products-heading h1 {
+    margin: 0;
+    font-size: 36px;
+    font-weight: 500;
+}
+
+
+/* Add Product Button */
+
+.add-product-button {
+    padding: 12px 22px;
+    border: 1px solid #222;
+    background-color: #222;
+    color: white;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.add-product-button:hover {
+    background-color: white;
+    color: #222;
+}
+
+
+/* Add / Edit Product Form */
+
+.add-product-form {
+    border: 1px solid #ddd;
+    padding: 30px;
+    margin-bottom: 50px;
+    background-color: white;
+}
+
+.add-product-form h2 {
+    margin: 0 0 25px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.product-form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.product-form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.product-form-group label {
+    margin-bottom: 8px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.product-form-group input,
+.product-form-group select,
+.product-form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    background-color: white;
+    font-family: inherit;
+    font-size: 13px;
+    box-sizing: border-box;
+}
+
+.product-form-group textarea {
+    resize: vertical;
+}
+
+.product-form-group input:focus,
+.product-form-group select:focus,
+.product-form-group textarea:focus {
+    outline: none;
+    border-color: #222;
+}
+
+
+/* Save / Update Button */
+
+.save-product-button {
+    padding: 12px 25px;
+    border: 1px solid #222;
+    background-color: #222;
+    color: white;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.save-product-button:hover {
+    background-color: white;
+    color: #222;
+}
+
+
+/* Product Grid */
+
+.admin-products-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.admin-product-card {
+    border: 1px solid #ddd;
+    background-color: white;
+}
+
+
+/* Product Image */
+
+.admin-product-image {
+    position: relative;
+    width: 100%;
+    height: 330px;
+    overflow: hidden;
+}
+
+.admin-product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* Badge */
+
+.admin-product-badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    padding: 6px 10px;
+    background-color: #222;
+    color: white;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+
+/* Product Information */
+
+.admin-product-info {
+    padding: 20px;
+}
+
+.admin-product-info h3 {
+    margin: 0 0 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.admin-product-info p {
+    margin: 6px 0;
+    color: #777;
+    font-size: 13px;
+}
+
+.admin-product-price {
+    color: #222 !important;
+    font-size: 15px !important;
+    font-weight: 600;
+    margin-bottom: 18px !important;
+}
+
+
+/* Product Buttons */
+
+.product-action-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.edit-product-button,
+.delete-product-button {
+    flex: 1;
+    padding: 11px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+/* Edit */
+
+.edit-product-button {
+    border: 1px solid #222;
+    background-color: #222;
+    color: white;
+}
+
+.edit-product-button:hover {
+    background-color: white;
+    color: #222;
+}
+
+
+/* Delete */
+
+.delete-product-button {
+    border: 1px solid #222;
+    background-color: white;
+    color: #222;
+}
+
+.delete-product-button:hover {
+    background-color: #222;
+    color: white;
+}
+
+
+/* No Products */
+
+.no-admin-products {
+    text-align: center;
+    color: #777;
+    padding: 60px 0;
+    font-size: 15px;
+}
+
+
+/* Tablet */
+
+@media (max-width: 900px) {
+
+    .admin-products-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .admin-products-container {
+        padding: 40px 20px 70px;
+    }
+
+    .admin-products-heading {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .admin-products-heading h1 {
+        font-size: 30px;
+    }
+
+    .add-product-button {
+        width: 100%;
+    }
+
+    .add-product-form {
+        padding: 20px;
+    }
+
+    .product-form-grid {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .admin-products-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .admin-product-image {
+        height: 400px;
+    }
+
+    .product-action-buttons {
+        flex-direction: column;
+    }
+
+}

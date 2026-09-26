@@ -1,0 +1,213 @@
+.admin-orders-page {
+    min-height: 100vh;
+    background-color: #fff;
+}
+
+.admin-orders-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 60px 30px 100px;
+}
+
+.admin-orders-container > h1 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 500;
+    margin: 0 0 50px;
+}
+
+.no-admin-orders {
+    text-align: center;
+    color: #777;
+    padding: 60px 0;
+    font-size: 15px;
+}
+
+.admin-orders-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.admin-order-card {
+    border: 1px solid #ddd;
+    padding: 30px;
+    background-color: white;
+}
+
+.admin-order-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.admin-order-header h2 {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0 0 8px;
+}
+
+.admin-order-header p {
+    margin: 5px 0;
+    color: #777;
+    font-size: 14px;
+}
+
+/* Status */
+
+.admin-status-section {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.admin-status-section label {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.admin-status-section select {
+    min-width: 160px;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    background-color: white;
+    color: #222;
+    font-size: 13px;
+    cursor: pointer;
+    outline: none;
+}
+
+.admin-status-section select:focus {
+    border-color: #222;
+}
+
+/* Customer */
+
+.admin-customer {
+    padding: 25px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.admin-customer h3,
+.admin-products h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 0 15px;
+}
+
+.admin-customer p {
+    margin: 5px 0;
+    color: #666;
+    font-size: 14px;
+}
+
+/* Products */
+
+.admin-products {
+    padding: 25px 0;
+}
+
+.admin-product {
+    display: flex;
+    gap: 20px;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.admin-product:last-child {
+    border-bottom: none;
+}
+
+.admin-product img {
+    width: 100px;
+    height: 120px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.admin-product h4 {
+    margin: 0 0 8px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.admin-product p {
+    margin: 5px 0;
+    color: #666;
+    font-size: 13px;
+}
+
+/* Payment */
+
+.admin-payment {
+    padding: 20px 0;
+    border-top: 1px solid #ddd;
+}
+
+.admin-payment p {
+    margin: 0;
+    color: #666;
+    font-size: 13px;
+}
+
+/* Total */
+
+.admin-order-total {
+    text-align: right;
+    padding-top: 20px;
+    border-top: 1px solid #222;
+}
+
+.admin-order-total h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    .admin-orders-container {
+        padding: 40px 20px 70px;
+    }
+
+    .admin-orders-container > h1 {
+        font-size: 30px;
+        margin-bottom: 35px;
+    }
+
+    .admin-order-card {
+        padding: 20px;
+    }
+
+    .admin-order-header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .admin-status-section {
+        width: 100%;
+    }
+
+    .admin-status-section select {
+        width: 100%;
+    }
+
+    .admin-product {
+        gap: 15px;
+    }
+
+    .admin-product img {
+        width: 80px;
+        height: 100px;
+    }
+
+    .admin-order-total {
+        text-align: left;
+    }
+}

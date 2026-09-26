@@ -1,0 +1,63 @@
+.not-found-container {
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px;
+    box-sizing: border-box;
+}
+
+.not-found-number {
+    margin: 0;
+    font-size: 100px;
+    font-weight: 700;
+    letter-spacing: 5px;
+}
+
+.not-found-container h1 {
+    margin: 10px 0 15px;
+    font-size: 36px;
+}
+
+.not-found-message {
+    margin: 0;
+    color: #777;
+    font-size: 15px;
+}
+
+.back-home-button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 13px 30px;
+    border: 1px solid #222;
+    background-color: #222;
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.back-home-button:hover {
+    background-color: white;
+    color: #222;
+}
+
+@media (max-width: 768px) {
+
+    .not-found-number {
+        font-size: 70px;
+    }
+
+    .not-found-container h1 {
+        font-size: 28px;
+    }
+
+    .not-found-message {
+        font-size: 14px;
+    }
+
+}
